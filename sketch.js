@@ -100,7 +100,7 @@ function draw() {
     
     ground.velocityX = -4 -(score/100);
     
-    if (score%100 === 0 && score != 0) {
+    if (score%100 === 0 && score > 0) {
       checkPoint_sound.play();
     }
   }
