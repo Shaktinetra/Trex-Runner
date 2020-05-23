@@ -11,7 +11,7 @@ localStorage["HighestScore"] = 0;
 function preload(){
   checkPoint_sound = loadSound('checkPoint.mp3');
   die_sound = loadSound('die.mp3');
-  jump_sound = loadSound('jump.mp3')
+  jump_sound = loadSound('jump.mp3');
   
   trex_running = loadAnimation("trex1.png","trex3.png","trex4.png");
   trex_collided = loadImage("trex_collided.png");
