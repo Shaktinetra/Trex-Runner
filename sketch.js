@@ -9,9 +9,9 @@ var score, reset, resetImg, gameOver, overImg, checkPoint, die, jump;
 localStorage["HighestScore"] = 0;
 
 function preload(){
-  checkPoint = loadSound("checkPoint.mp3");
-  die = loadSound("die.mp3");
-  jump = loadSound("jump.mp3")
+  checkPoint = loadSound('checkPoint.mp3');
+  die = loadSound('die.mp3');
+  jump = loadSound('jump.mp3')
   
   trex_running = loadAnimation("trex1.png","trex3.png","trex4.png");
   trex_collided = loadImage("trex_collided.png");
