@@ -6,6 +6,7 @@ var obstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4, obstacle5, obsta
 
 var score, reset, resetImg, gameOver, overImg;
 
+localStorage["HighestScore"] = 0;
 
 function preload(){
   trex_running = loadAnimation("trex1.png","trex3.png","trex4.png");
@@ -127,6 +128,12 @@ function restart() {
   cloudsGroup.destroyEach();
   
   score = 0;
+  
+  if (localStorage["HighestScore"] < score) {
+    localStorage["HighestScore"] = score;
+  }
+  
+  console.log(localStorage["HighestScore"]);
 }  
 
 function spawnClouds() {
